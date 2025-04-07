@@ -1,0 +1,39 @@
+[
+  {
+   "default": "<h1>Hello, world!</h1>",
+   "display_width": null,
+   "id": "text",
+   "label": "Rich text field",
+   "locked": false,
+   "name": "text",
+   "required": false,
+   "type": "richtext"
+  },
+  {
+   "type": "group",
+   "id": "a0cec9aa-f342-b2ca-2186-7207c7567058",
+   "label": "Animation Controls",
+   "children": [
+    {
+     "type": "number",
+     "id": "61821370-7473-76d9-dd89-d1397eec6a4e",
+     "display": "text",
+     "step": 1,
+     "label": "Speed",
+     "name": "speed",
+     "suffix": "s"
+    },
+    {
+     "type": "number",
+     "id": "f99b34da-f749-7aa7-2254-f3f23855e274",
+     "display": "text",
+     "step": 1,
+     "label": "Delay",
+     "name": "delay",
+     "suffix": "s"
+    }
+   ],
+   "name": "animation_controls",
+   "default": {}
+  }
+ ]

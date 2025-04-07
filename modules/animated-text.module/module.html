@@ -1,0 +1,21 @@
+<!-- module html  -->
+<div class="animated-text" style="animation-duration: {{ module.animation_controls.speed ~ 's' }}; animation-delay: {{ module.animation_controls.delay ~ 's' }};">
+    {{ module.text|safe }}
+  </div>
+  
+  <style>
+    .animated-text {
+      animation-name: fadeIn;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: both;
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
