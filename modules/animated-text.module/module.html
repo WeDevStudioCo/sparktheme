@@ -1,6 +1,6 @@
 <!-- module html  -->
 <div class="animated-text" style="animation-duration: {{ module.animation_controls.speed ~ 's' }}; animation-delay: {{ module.animation_controls.delay ~ 's' }};">
-    {{ module.text|safe }}
+    <{{ module.text.text_tag }}>{{ module.text.text_field|safe }}</{{ module.text.text_tag }}>
   </div>
   
   <style>

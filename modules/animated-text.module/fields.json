@@ -1,39 +1,169 @@
 [
   {
-   "default": "<h1>Hello, world!</h1>",
-   "display_width": null,
-   "id": "text",
-   "label": "Rich text field",
-   "locked": false,
-   "name": "text",
-   "required": false,
-   "type": "richtext"
-  },
-  {
    "type": "group",
-   "id": "a0cec9aa-f342-b2ca-2186-7207c7567058",
-   "label": "Animation Controls",
+   "id": "e869787c-5a38-41fb-c7a3-5214e822a605",
+   "label": "Text",
    "children": [
     {
-     "type": "number",
-     "id": "61821370-7473-76d9-dd89-d1397eec6a4e",
-     "display": "text",
-     "step": 1,
-     "label": "Speed",
-     "name": "speed",
-     "suffix": "s"
+     "type": "text",
+     "id": "49af7e07-cb06-6cb8-a0e8-2e9b552f4eea",
+     "validation_regex": "",
+     "label": "Texto",
+     "name": "text_field"
     },
     {
-     "type": "number",
-     "id": "f99b34da-f749-7aa7-2254-f3f23855e274",
-     "display": "text",
-     "step": 1,
-     "label": "Delay",
-     "name": "delay",
-     "suffix": "s"
+     "type": "choice",
+     "id": "9680e308-6ce9-3862-5a7c-d49cf98710d7",
+     "display": "select",
+     "choices": [
+      [
+       "p",
+       "Paragraph"
+      ],
+      [
+       "h1",
+       "h1"
+      ],
+      [
+       "h2",
+       "h2"
+      ],
+      [
+       "h3",
+       "h3"
+      ],
+      [
+       "h4",
+       "h4"
+      ],
+      [
+       "h5",
+       "h5"
+      ],
+      [
+       "h6",
+       "h6"
+      ]
+     ],
+     "label": "Text Tag",
+     "name": "text_tag",
+     "default": "p"
+    },
+    {
+     "type": "choice",
+     "id": "138bff9b-a04d-95ec-54e6-5def39bfb86d",
+     "display": "select",
+     "choices": [
+      [
+       "left",
+       "Left"
+      ],
+      [
+       "right",
+       "Right"
+      ],
+      [
+       "center",
+       "Center"
+      ]
+     ],
+     "label": "Text Align",
+     "name": "text_align"
     }
    ],
+   "name": "text",
+   "default": {
+    "text_tag": "p"
+   }
+  },
+  {
+   "children": [
+    {
+     "type": "choice",
+     "id": "4f0b9c5a-e5e5-0417-1d8e-54bd5ee1a966",
+     "display": "select",
+     "choices": [
+      [
+       "fade_in",
+       "Fade In"
+      ],
+      [
+       "fade_up",
+       "Fade Up"
+      ],
+      [
+       "blur",
+       "Blur"
+      ],
+      [
+       "stagger",
+       "Stagger"
+      ]
+     ],
+     "label": "Animation Type",
+     "name": "animation_type"
+    },
+    {
+     "display": "text",
+     "display_width": null,
+     "id": "61821370-7473-76d9-dd89-d1397eec6a4e",
+     "label": "Speed",
+     "locked": false,
+     "name": "speed",
+     "required": false,
+     "step": 1,
+     "suffix": "s",
+     "type": "number"
+    },
+    {
+     "display": "text",
+     "display_width": null,
+     "id": "f99b34da-f749-7aa7-2254-f3f23855e274",
+     "label": "Delay",
+     "locked": false,
+     "name": "delay",
+     "required": false,
+     "step": 1,
+     "suffix": "s",
+     "type": "number"
+    }
+   ],
+   "default": {},
+   "display_width": null,
+   "expanded": false,
+   "group_occurrence_meta": null,
+   "id": "a0cec9aa-f342-b2ca-2186-7207c7567058",
+   "label": "Animation Controls",
+   "locked": false,
    "name": "animation_controls",
-   "default": {}
-  }
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  },
+  {
+    "type": "group",
+    "isNew": false,
+    "name": "style",
+    "label": "Style",
+    "tab": "STYLE",
+    "id": "daaa6e76-3b9c-e9ee-520c-cc3f8248ac9d",
+    "children": [
+     {
+      "type": "color",
+      "id": "b6f1f6e5-be91-024a-2e8d-e4d0b94debe8",
+      "default": {
+       "color": "#FFFFFF",
+       "opacity": 100
+      },
+      "label": "Text Color",
+      "name": "text_color"
+     }
+    ],
+    "default": {
+     "text_color": {
+      "color": "#FFFFFF",
+      "opacity": 100
+     }
+    }
+   }
  ]
